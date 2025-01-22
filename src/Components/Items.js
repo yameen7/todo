@@ -7,7 +7,7 @@ export default function Items({todo, onDelete}) {
                 <div className="card-body">
                     <h5 className="card-title">{todo.title}</h5>
                     <p className="card-text">{todo.desc}</p>
-                    <a href="#" className="btn btn-danger" onClick={()=> {onDelete(todo)}}>Delete</a>
+                    <button className="btn btn-danger" onClick={()=> {onDelete(todo)}}>Delete</a>
                 </div>
             </div>
         </div>
