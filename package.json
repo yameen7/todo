@@ -16,7 +16,6 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build -r https://x-access-token:${{ secrets.GH_PAT }}@github.com/yameen7/todo.git",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
