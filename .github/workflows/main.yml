@@ -25,6 +25,6 @@ jobs:
       run: npm run build
 
     - name: Deploy to GitHub Pages
-      run: git config user.email "myameen033@gmail.com" && git config --global user.name "yameen7" && npx gh-pages -d build -r https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/yameen7/todo.git
+      run: git config user.email "myameen033@gmail.com" && git config --global user.name "yameen7" && npx gh-pages -d build -r https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/yameen7/todo.git
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
